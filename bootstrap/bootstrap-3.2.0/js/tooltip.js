@@ -14,6 +14,10 @@
   // TOOLTIP PUBLIC CLASS DEFINITION
   // ===============================
 
+    /**
+     * 构造函数的方式定义类
+     * 函数体内部定义的属性和方法可以看做是类的私有属性和方法
+     */
   var Tooltip = function (element, options) {
     this.type       =
     this.options    =
@@ -43,6 +47,12 @@
     }
   }
 
+    /**
+     * 为Button.prototype对象定义的属性和方法都可以看做是类的公共属性和方法
+     * @param type
+     * @param element
+     * @param options
+     */
   Tooltip.prototype.init = function (type, element, options) {
     this.enabled   = true
     this.type      = type
